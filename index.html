@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Command Line Interface Simulation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="console">
+        <main>
+
+        <section id="home">
+        <h2>UĞUR YILDIRIM official website.</h2>
+        <p>Born in Istanbul in 1990, computer programmer.</p>
+        <h2><span>Social Networks</span></h2>
+        <ul>
+        <li>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/ugryldrm/" target="_blank">ugryldrm</a></li>
+        <li>Github: <a target="_blank" href="https://github.com/crypto-su" target="_blank">crypto-su</a></li>
+        <li>Stackoverflow: <a target="_blank" href="https://stackoverflow.com/users/3646472" target="_blank">cryptosu</a></li>
+        <li>Twitter: <a target="_blank" href="https://twitter.com/crypto_su_us" target="_blank">@crypto_su_us</a></li>
+        </ul>
+        <h2><span>Contact</span></h2>
+        <ul>
+        <li>E-Mail: <a target="_blank" href="mailto:info@oni.team" target="_blank">to</a></li>
+        <li>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/ugryldrm/" target="_blank">go to</a></li>
+        </ul>
+        <p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+        </section>
+
+        <section id="usage">
+        <h2><span>&raquo;Usage</span></h2>
+        <p>Using it is pretty straight forward. Create several(as much as you need) divs or &laquo;section&raquo; elements each with it's unique id to hold your content. Make sure to have an error section (id="error") with some information to warn the user when he/she mistypes a command or if there is no section with that name, think of it as a 404 page.</p>
+        <p>A section with id="help" is also required so you can list all the available sections and let your users know what words to write to access that particular content.</p>
+        <p>The input field must be a standalone element and must not be placed inside any of the content divs or sections, and make sure you give it a classname "command", if you want to name it anything else you need to edit the app.js and change all instances of .command in the script to match your chosen classname.</p>
+        <p>In short, just view the source code of this demo, copy/modify it to your liking making sure you include the error and help sections.</p>
+        </section>
+
+        <section id="ping">
+        <h2><span>&raquo;Ping</span></h2>
+        <p>Ping programı, 1983 yılında Mike Muuss tarafından yazılmış bir programdır. Çalışma prensibi hedefe 32 baytlık bir ICMP paketi göndermek ve aynı paketin geri gelmesini beklemek üzerine kuruludur. Sunucu istemciye ne kadar uzak ise, bekleme süresi o kadar artmaktadır.</p>
+        <h2><span>-Örneğin-</span></h2>
+        <p>Türkiye'deki bir kaynaktan Türkiye'deki bir hedefe ping yollayan bir istemci geri dönüş alabilmesi için 3 saniye beklerken, aynı istemci Almanya'daki bir hedefe ping yolladığında 5 saniye bekleyebilir.</p>
+        <h2><span>-Özellikler-</span></h2>
+        <ul>
+          <li>Ping (echo) paketi gönderilen makinenin o anda çalışmakta olduğunu teyit eder.</li>
+          <li>Ağın o anki paket kayıp oranı hakkında bir bilgi verebilir.</li>
+          <li>Kaynak makine ile karşı makine arasındaki iletişimin süresini gösterebilir.</li>
+          <li>Bazı ağ cihazları, Ping komutuna yanıt vermemesi için ayarlanabilir.</li>
+          <li>IPv4 veya IPv6 olarak sonuç döndürmesi sağlanabilir</li>
+        </ul>
+        </section>
+
+        <section id="download">
+        <h2><span>&raquo;Download</span></h2>
+        <p>Download/fork the source code: <a target="_blank" href="https://github.com/crypto-su/profileWebsiteConsole">Github</a></br>
+        Depends on jQuery</br>
+        License: MIT</p>
+        </section>
+
+        <section id="error">
+        <p>Command not found!<p>
+        <p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+        </section>
+
+        <section id="help">
+        <h2><span>&raquo;Help?</span></h2>
+        <p><span>Type [command] + <kbd>Enter</kbd></span></p>
+        <ul>
+            <li>'home' -- Thats obvious!</li>
+            <li>'usage' -- How to</li>
+            <li>'ping' -- Ping Nedir?</li>
+            <li>'download' -- Download + license</li>
+            <li>'help' -- displays this list</li>
+        </ul>
+        </section>
+
+        <span class="command">anonymouse:/$<input type="text"></span>
+
+        </main>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="./script.js"></script>
+  
+</body>
+</html>
